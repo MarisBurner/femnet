@@ -10,7 +10,7 @@ You can also import the official FemNet client API to send encrypted packets thr
 ```lua
 local femnet = require("femnet.client")
 
-res = femnet.get("RandomHostname",{page = "Content"}) -- This will yield the program until a response
+res = femnet.get("RandomHostname",{src = "Content"}) -- This will yield the program until a response
 
 if res.c == 200 then
  --Response success
